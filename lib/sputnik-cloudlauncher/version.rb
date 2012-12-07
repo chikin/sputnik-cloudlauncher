@@ -16,8 +16,8 @@
 # limitations under the License.
 #
 
-module Sputnik::Plugin
-  module Launcher
+module Sputnik
+  module CloudLauncher
     VERSION = "0.1.0"
   end
 end

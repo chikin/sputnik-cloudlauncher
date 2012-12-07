@@ -3,7 +3,7 @@ require File.expand_path('../lib/sputnik-cloudlauncher/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.name          = "sputnik-cloudlauncher"
-  s.version       = Sputnik::Plugin::Launcher::VERSION
+  s.version       = Sputnik::CloudLauncher::VERSION
   s.summary       = 'Sputnik CLI plugin to easily build, deploy and destroy clusters Chef.'
   s.description   = s.summary
   s.authors       = ['Matt Ray']
@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/sputnik/sputnik-cloudlauncher'
   s.files         = Dir['LICENSE', 'lib/**/*']
   s.require_paths = ['lib']
-  s.add_dependency('spiceweasel')
-  s.add_dependency('mixlib-cli')
-  s.add_dependency('highline')
+  # s.add_dependency('spiceweasel')
+  # s.add_dependency('mixlib-cli')
+  # s.add_dependency('highline')
 end

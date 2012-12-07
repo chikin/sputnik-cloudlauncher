@@ -15,6 +15,36 @@ Depends on Chef 10.x or later.
 Usage
 =====
 
+Fires up the application on a local lxc deployment
+```
+sputnik launch lxc
+```
+
+Add `openstack` as a target
+```
+sputnik provider:add openstack
+```
+
+Launch or refresh the nodes defined for the `openstack` cluster
+```
+sputnik launch openstack
+```
+
+Display the status of the nodes defined for the `openstack` cluster
+```
+sputnik show openstack
+```
+
+Remove all of the nodes defined for the `openstack` cluster
+```
+sputnik destroy openstack
+```
+
+Remove the `openstack` provider completely (calls `sputnik destroy openstack` first)
+```
+sputnik provider:remove openstack
+```
+
 License and Author
 ==================
 Author: Matt Ray <matt@opscode.com>

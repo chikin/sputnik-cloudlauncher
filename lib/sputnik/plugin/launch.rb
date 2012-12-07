@@ -18,15 +18,15 @@
 
 require 'sputnik'
 
-class Sputnik::Plugins
+module Sputnik::Plugin
   class Launch < Plugin
 
   option :version,
   :short => '-v',
   :long => '--version',
-  :description => 'Show Sputnik Launcher version',
+  :description => 'Show Sputnik Launch version',
   :boolean => true,
-  :proc => lambda { |v| puts "Sputnik Launcher: #{Sputnik::Launcher::VERSION}" },
+  :proc => lambda { |v| puts "Sputnik Launch: #{Sputnik::CloudLauncher::VERSION}" },
   :exit => 0
 
   end
