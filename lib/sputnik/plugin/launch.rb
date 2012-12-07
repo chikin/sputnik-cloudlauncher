@@ -21,20 +21,22 @@ require 'sputnik'
 module Sputnik
   class Plugin
     class Launch < Plugin
-      puts "Yo dawg: Sputnik::Plugin::Launch"
 
-    # option :version,
-    # :short => '-v',
-    # :long => '--version',
-    # :description => 'Show Sputnik Launch version',
-    # :boolean => true,
-    # :proc => lambda { |v| puts "Sputnik Launch: #{Sputnik::CloudLauncher::VERSION}" },
-    # :exit => 0
+      option :version,
+        :short => '-v',
+        :long => '--version',
+        :description => 'Show Sputnik Launch version',
+        :boolean => true,
+        :proc => lambda { |v| puts "Sputnik Launch: #{Sputnik::CloudLauncher::VERSION}" },
+        :exit => 0
 
-    # load the spiceweasel manifest, get the nodes defined for that cluster
-    # ask the chef server
-    # call spiceweasel on the nodes for a particular provider
+      # load the spiceweasel manifest, get the nodes defined for that cluster
+      # ask the chef server
+      # call spiceweasel on the nodes for a particular provider
 
+      def call
+        puts "I'm launching like a boss......"
+      end
 
     end
   end
