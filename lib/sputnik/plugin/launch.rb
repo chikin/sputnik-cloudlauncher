@@ -36,5 +36,6 @@ module Sputnik
     # call spiceweasel on the nodes for a particular provider
 
 
+    end
   end
 end
