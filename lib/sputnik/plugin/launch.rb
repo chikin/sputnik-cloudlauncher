@@ -17,6 +17,7 @@
 #
 
 require 'sputnik'
+require 'sputnik-cloudlauncher/version'
 
 module Sputnik
   class Plugin
@@ -27,7 +28,7 @@ module Sputnik
         :long => '--version',
         :description => 'Show Sputnik Launch version',
         :boolean => true,
-        :proc => lambda { |v| puts "Sputnik Launch: #{Sputnik::CloudLauncher::VERSION}" },
+        :proc => lambda { |v| puts "Sputnik Launch: #{::Sputnik::CloudLauncher::VERSION}" },
         :exit => 0
 
       # load the spiceweasel manifest, get the nodes defined for that cluster
