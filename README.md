@@ -49,6 +49,7 @@ License and Author
 ==================
 Author: Matt Ray <matt@opscode.com>
 
+Copyright: 2012 Dell, Inc
 Copyright: 2012 Opscode, Inc
 
 Licensed under the Apache License, Version 2.0 (the "License");
