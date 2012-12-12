@@ -12,7 +12,5 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/sputnik/sputnik-cloudlauncher'
   s.files         = Dir['LICENSE', 'lib/**/*']
   s.require_paths = ['lib']
-  # s.add_dependency('spiceweasel')
-  # s.add_dependency('mixlib-cli')
-  # s.add_dependency('highline')
+  s.add_dependency('sputnik1')
 end
