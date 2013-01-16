@@ -20,22 +20,24 @@ require 'sputnik-cloudlauncher'
 
 module Sputnik
   class Plugin
-    class Launch < Plugin
-
-      # option :version,
-      # :short => '-v',
-      # :long => '--version',
-      # :description => 'Show Sputnik Launch version',
-      # :boolean => true,
-      # :proc => lambda { |v| puts "Sputnik Launch: #{::Sputnik::CloudLauncher::VERSION}" },
-      # :exit => 0
-
-      # load the spiceweasel manifest, get the nodes defined for that cluster
-      # ask the chef server
-      # call spiceweasel on the nodes for a particular provider
+    class Provider < Plugin
 
       def call
-        puts "Sputnik::Plugin::Launch.call"
+        puts "Sputnik::Plugin::Provider.call"
+        require 'pry'
+        binding.pry
+      end
+
+      class Add < Plugin
+        def call
+          puts "Sputnik::Plugin::Provider::Add.call"
+        end
+      end
+
+      class Remove < Plugin
+        def call
+          puts "Sputnik::Plugin::Provider::Remove.call"
+        end
       end
 
     end

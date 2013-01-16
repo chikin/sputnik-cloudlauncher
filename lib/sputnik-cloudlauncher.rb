@@ -16,28 +16,5 @@
 # limitations under the License.
 #
 
-require 'sputnik-cloudlauncher'
-
-module Sputnik
-  class Plugin
-    class Launch < Plugin
-
-      # option :version,
-      # :short => '-v',
-      # :long => '--version',
-      # :description => 'Show Sputnik Launch version',
-      # :boolean => true,
-      # :proc => lambda { |v| puts "Sputnik Launch: #{::Sputnik::CloudLauncher::VERSION}" },
-      # :exit => 0
-
-      # load the spiceweasel manifest, get the nodes defined for that cluster
-      # ask the chef server
-      # call spiceweasel on the nodes for a particular provider
-
-      def call
-        puts "Sputnik::Plugin::Launch.call"
-      end
-
-    end
-  end
-end
+require 'sputnik'
+require 'sputnik-cloudlauncher/version'
