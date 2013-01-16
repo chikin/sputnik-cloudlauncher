@@ -2,10 +2,10 @@
 require File.expand_path('../lib/sputnik-cloudlauncher/version', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name          = "sputnik-cloudlauncher"
+  s.name          = 'sputnik-cloudlauncher'
   s.version       = Sputnik::CloudLauncher::VERSION
-  s.summary       = 'Sputnik CLI plugin to easily build, deploy and destroy clusters Chef.'
-  s.description   = s.summary
+  s.summary       = 'Sputnik launch plugin to easily build, deploy and destroy clusters Chef.'
+  s.description   = 'Sputnik CLI plugin to easily launch and destroy clusters of nodes with Chef.'
   s.authors       = ['Matt Ray']
   s.email         = ['matt@opscode.com']
   s.license       = 'Apache'
