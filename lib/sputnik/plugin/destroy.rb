@@ -22,6 +22,12 @@ module Sputnik
   class Plugin
     class Destroy < Plugin
 
+      banner('Usage: sputnik destroy [options]')
+
+      def version
+        return ::Sputnik::CloudLauncher::VERSION
+      end
+
       def call
         puts "Sputnik::Plugin::Destroy.call"
       end

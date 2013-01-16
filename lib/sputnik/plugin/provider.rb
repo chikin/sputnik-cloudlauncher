@@ -22,6 +22,12 @@ module Sputnik
   class Plugin
     class Provider < Plugin
 
+      banner('Usage: sputnik provider add|remove [options]')
+
+      def version
+        return ::Sputnik::CloudLauncher::VERSION
+      end
+
       def call
         puts "Sputnik::Plugin::Provider.call"
         require 'pry'
@@ -29,12 +35,16 @@ module Sputnik
       end
 
       class Add < Plugin
+        banner('Usage: sputnik provider add [options]')
+
         def call
           puts "Sputnik::Plugin::Provider::Add.call"
         end
       end
 
       class Remove < Plugin
+        banner('Usage: sputnik provider remove [options]')
+
         def call
           puts "Sputnik::Plugin::Provider::Remove.call"
         end
